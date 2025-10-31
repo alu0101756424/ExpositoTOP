@@ -1,0 +1,275 @@
+\doxysection{top.\+TOPTWGRASP Class Reference}
+\hypertarget{classtop_1_1_t_o_p_t_w_g_r_a_s_p}{}\label{classtop_1_1_t_o_p_t_w_g_r_a_s_p}\index{top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtop_1_1_t_o_p_t_w_g_r_a_s_p_af0ff5000bf59464aaf630ba7d1753b29}{TOPTWGRASP}} (\mbox{\hyperlink{classtop_1_1_t_o_p_t_w_solution}{TOPTWSolution}} sol)
+\begin{DoxyCompactList}\small\item\em Constructor que recibe la solución sobre la que trabajará el GRASP. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a11242fc809f6a16ff81136c4785fdc3e}{GRASP}} (int max\+Iterations, int max\+Size\+RCL)
+\begin{DoxyCompactList}\small\item\em Bucle principal del algoritmo GRASP. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a2c07bc597fa781b81a53ad1017e24a4f}{aleatory\+Selection\+RCL}} (int max\+TRCL)
+\begin{DoxyCompactList}\small\item\em Selección aleatoria dentro de la RCL. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a248016e6d9118cdf5e7284972d31ecea}{fuzzy\+Selection\+Best\+FDRCL}} (Array\+List$<$ double\mbox{[}$\,$\mbox{]}$>$ rcl)
+\begin{DoxyCompactList}\small\item\em Selección difusa que prioriza el mejor criterio FDRCL (minimiza pertenencia). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a0bcf603d05fd13ac0935e3597cc37c6b}{fuzzy\+Selection\+Alpha\+Cut\+RCL}} (Array\+List$<$ double\mbox{[}$\,$\mbox{]}$>$ rcl, double alpha)
+\begin{DoxyCompactList}\small\item\em Selección difusa mediante alpha-\/cut sobre la RCL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_g_r_a_s_p_ade97c51a7d20660d7d306b756b4a6302}{compute\+Greedy\+Solution}} (int max\+Size\+RCL)
+\begin{DoxyCompactList}\small\item\em Construcción voraz aleatorizada de la solución. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_g_r_a_s_p_adaccdd26e4ad89ffb3e86c780dcd90d7}{update\+Solution}} (double\mbox{[}$\,$\mbox{]} candidate\+Selected, Array\+List$<$ Array\+List$<$ Double $>$ $>$ departure\+Times)
+\begin{DoxyCompactList}\small\item\em Inserta el candidato seleccionado en la solución y actualiza tiempos. \end{DoxyCompactList}\item 
+Array\+List$<$ double\mbox{[}$\,$\mbox{]} $>$ \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_g_r_a_s_p_ae706fe2d8478acf0a026bb40e8fc9df7}{comprehensive\+Evaluation}} (Array\+List$<$ Integer $>$ customers, Array\+List$<$ Array\+List$<$ Double $>$ $>$ departure\+Times)
+\begin{DoxyCompactList}\small\item\em Evaluación comprensiva de posibles inserciones para todos los clientes y rutas creadas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtop_1_1_t_o_p_t_w_solution}{TOPTWSolution}} \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a4c37722144024730a440f34343530d2c}{get\+Solution}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la solución actual del GRASP. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a01595711790fbdceebe112f930ff7f02}{set\+Solution}} (\mbox{\hyperlink{classtop_1_1_t_o_p_t_w_solution}{TOPTWSolution}} solution)
+\begin{DoxyCompactList}\small\item\em Establece la solución sobre la que operará el GRASP. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a52f508173fa05609d4bf7db92111a3b8}{get\+Solution\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el tiempo asociado a la solución. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a88f5adcd791131b1d8da3dc848d80701}{set\+Solution\+Time}} (int solution\+Time)
+\begin{DoxyCompactList}\small\item\em Establece el tiempo asociado a la solución. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_g_r_a_s_p_ae0fad47956718e9e96ee5fb6022d9f5b}{get\+Max\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la puntuación máxima entre todos los POIs del problema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a4319fa91e2578bb9b5570dc1af7b6f3b}{NO\+\_\+\+EVALUATED}} = -\/1.\+0
+\begin{DoxyCompactList}\small\item\em Marca usada para indicar que una solución no ha sido evaluada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classtop_1_1_t_o_p_t_w_g_r_a_s_p_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtop_1_1_t_o_p_t_w_g_r_a_s_p_af0ff5000bf59464aaf630ba7d1753b29}\index{top.TOPTWGRASP@{top.TOPTWGRASP}!TOPTWGRASP@{TOPTWGRASP}}
+\index{TOPTWGRASP@{TOPTWGRASP}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{\texorpdfstring{TOPTWGRASP()}{TOPTWGRASP()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_af0ff5000bf59464aaf630ba7d1753b29} 
+top.\+TOPTWGRASP.\+TOPTWGRASP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtop_1_1_t_o_p_t_w_solution}{TOPTWSolution}}}]{sol}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor que recibe la solución sobre la que trabajará el GRASP. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sol} & Instancia de {\ttfamily \doxylink{classtop_1_1_t_o_p_t_w_solution}{TOPTWSolution}} usada para construir y evaluar rutas. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classtop_1_1_t_o_p_t_w_g_r_a_s_p_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a2c07bc597fa781b81a53ad1017e24a4f}\index{top.TOPTWGRASP@{top.TOPTWGRASP}!aleatorySelectionRCL@{aleatorySelectionRCL}}
+\index{aleatorySelectionRCL@{aleatorySelectionRCL}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{\texorpdfstring{aleatorySelectionRCL()}{aleatorySelectionRCL()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a2c07bc597fa781b81a53ad1017e24a4f} 
+int top.\+TOPTWGRASP.\+aleatory\+Selection\+RCL (\begin{DoxyParamCaption}\item[{int}]{max\+TRCL}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Selección aleatoria dentro de la RCL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+TRCL} & Tamaño (límite superior) de la RCL para la selección. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Índice seleccionado aleatoriamente en el rango \mbox{[}0, max\+TRCL). 
+\end{DoxyReturn}
+\Hypertarget{classtop_1_1_t_o_p_t_w_g_r_a_s_p_ae706fe2d8478acf0a026bb40e8fc9df7}\index{top.TOPTWGRASP@{top.TOPTWGRASP}!comprehensiveEvaluation@{comprehensiveEvaluation}}
+\index{comprehensiveEvaluation@{comprehensiveEvaluation}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{\texorpdfstring{comprehensiveEvaluation()}{comprehensiveEvaluation()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_ae706fe2d8478acf0a026bb40e8fc9df7} 
+Array\+List$<$ double\mbox{[}$\,$\mbox{]} $>$ top.\+TOPTWGRASP.\+comprehensive\+Evaluation (\begin{DoxyParamCaption}\item[{Array\+List$<$ Integer $>$}]{customers}{, }\item[{Array\+List$<$ Array\+List$<$ Double $>$ $>$}]{departure\+Times}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Evaluación comprensiva de posibles inserciones para todos los clientes y rutas creadas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customers} & Lista de clientes candidatos a insertar. \\
+\hline
+{\em departure\+Times} & Tiempos actuales de salida por ruta/cliente. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista de candidatos válidos. Cada entrada es un arreglo double\mbox{[}5\mbox{]} con\+: \mbox{[}0\mbox{]}=cliente, \mbox{[}1\mbox{]}=ruta, \mbox{[}2\mbox{]}=predecesor, \mbox{[}3\mbox{]}=coste de inserción, \mbox{[}4\mbox{]}=score del cliente
+\end{DoxyReturn}
+Verifica ventanas temporales hacia delante para cada inserción y descarta las que violen due time, ready time o max\+Time\+Per\+Route. \Hypertarget{classtop_1_1_t_o_p_t_w_g_r_a_s_p_ade97c51a7d20660d7d306b756b4a6302}\index{top.TOPTWGRASP@{top.TOPTWGRASP}!computeGreedySolution@{computeGreedySolution}}
+\index{computeGreedySolution@{computeGreedySolution}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{\texorpdfstring{computeGreedySolution()}{computeGreedySolution()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_ade97c51a7d20660d7d306b756b4a6302} 
+void top.\+TOPTWGRASP.\+compute\+Greedy\+Solution (\begin{DoxyParamCaption}\item[{int}]{max\+Size\+RCL}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construcción voraz aleatorizada de la solución. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Size\+RCL} & Tamaño máximo de la RCL durante la construcción.\\
+\hline
+\end{DoxyParams}
+Inicializa la solución, las estructuras de tiempos y la lista de clientes, itera evaluando candidatos, construyendo la RCL y seleccionando inserciones hasta agotar clientes o no poder insertar más. \Hypertarget{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a0bcf603d05fd13ac0935e3597cc37c6b}\index{top.TOPTWGRASP@{top.TOPTWGRASP}!fuzzySelectionAlphaCutRCL@{fuzzySelectionAlphaCutRCL}}
+\index{fuzzySelectionAlphaCutRCL@{fuzzySelectionAlphaCutRCL}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{\texorpdfstring{fuzzySelectionAlphaCutRCL()}{fuzzySelectionAlphaCutRCL()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a0bcf603d05fd13ac0935e3597cc37c6b} 
+int top.\+TOPTWGRASP.\+fuzzy\+Selection\+Alpha\+Cut\+RCL (\begin{DoxyParamCaption}\item[{Array\+List$<$ double\mbox{[}$\,$\mbox{]}$>$}]{rcl}{, }\item[{double}]{alpha}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Selección difusa mediante alpha-\/cut sobre la RCL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rcl} & Lista de candidatos; cada entrada contiene métricas del candidato. \\
+\hline
+{\em alpha} & Umbral entre 0.\+0 y 1.\+0 para el corte difuso. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Índice del candidato elegido dentro de la RCL completa.
+\end{DoxyReturn}
+Si el alpha-\/cut deja candidatos, se elige aleatoriamente entre ellos; si no, se elige aleatoriamente dentro de la RCL original. \Hypertarget{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a248016e6d9118cdf5e7284972d31ecea}\index{top.TOPTWGRASP@{top.TOPTWGRASP}!fuzzySelectionBestFDRCL@{fuzzySelectionBestFDRCL}}
+\index{fuzzySelectionBestFDRCL@{fuzzySelectionBestFDRCL}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{\texorpdfstring{fuzzySelectionBestFDRCL()}{fuzzySelectionBestFDRCL()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a248016e6d9118cdf5e7284972d31ecea} 
+int top.\+TOPTWGRASP.\+fuzzy\+Selection\+Best\+FDRCL (\begin{DoxyParamCaption}\item[{Array\+List$<$ double\mbox{[}$\,$\mbox{]}$>$}]{rcl}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Selección difusa que prioriza el mejor criterio FDRCL (minimiza pertenencia). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rcl} & Lista de candidatos; cada entrada es un arreglo con información del candidato. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Posición del candidato seleccionado según la función de pertenencia calculada.
+\end{DoxyReturn}
+Usa la puntuación máxima para normalizar la pertenencia\+: membership = 1 -\/ score/max\+Score. \Hypertarget{classtop_1_1_t_o_p_t_w_g_r_a_s_p_ae0fad47956718e9e96ee5fb6022d9f5b}\index{top.TOPTWGRASP@{top.TOPTWGRASP}!getMaxScore@{getMaxScore}}
+\index{getMaxScore@{getMaxScore}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{\texorpdfstring{getMaxScore()}{getMaxScore()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_ae0fad47956718e9e96ee5fb6022d9f5b} 
+double top.\+TOPTWGRASP.\+get\+Max\+Score (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene la puntuación máxima entre todos los POIs del problema. 
+
+\begin{DoxyReturn}{Returns}
+Puntuación máxima encontrada en el arreglo de scores del problema.
+\end{DoxyReturn}
+Utilizado por las funciones de selección difusa para normalizar pertenencias. \Hypertarget{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a4c37722144024730a440f34343530d2c}\index{top.TOPTWGRASP@{top.TOPTWGRASP}!getSolution@{getSolution}}
+\index{getSolution@{getSolution}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{\texorpdfstring{getSolution()}{getSolution()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a4c37722144024730a440f34343530d2c} 
+\mbox{\hyperlink{classtop_1_1_t_o_p_t_w_solution}{TOPTWSolution}} top.\+TOPTWGRASP.\+get\+Solution (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene la solución actual del GRASP. 
+
+\begin{DoxyReturn}{Returns}
+Instancia de {\ttfamily \doxylink{classtop_1_1_t_o_p_t_w_solution}{TOPTWSolution}} usada por el GRASP. 
+\end{DoxyReturn}
+\Hypertarget{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a52f508173fa05609d4bf7db92111a3b8}\index{top.TOPTWGRASP@{top.TOPTWGRASP}!getSolutionTime@{getSolutionTime}}
+\index{getSolutionTime@{getSolutionTime}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{\texorpdfstring{getSolutionTime()}{getSolutionTime()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a52f508173fa05609d4bf7db92111a3b8} 
+int top.\+TOPTWGRASP.\+get\+Solution\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el tiempo asociado a la solución. 
+
+\begin{DoxyReturn}{Returns}
+Valor entero con el tiempo de la solución. 
+\end{DoxyReturn}
+\Hypertarget{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a11242fc809f6a16ff81136c4785fdc3e}\index{top.TOPTWGRASP@{top.TOPTWGRASP}!GRASP@{GRASP}}
+\index{GRASP@{GRASP}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{\texorpdfstring{GRASP()}{GRASP()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a11242fc809f6a16ff81136c4785fdc3e} 
+void top.\+TOPTWGRASP.\+GRASP (\begin{DoxyParamCaption}\item[{int}]{max\+Iterations}{, }\item[{int}]{max\+Size\+RCL}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Bucle principal del algoritmo GRASP. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Iterations} & Número máximo de iteraciones a ejecutar. \\
+\hline
+{\em max\+Size\+RCL} & Tamaño máximo permitido para la RCL durante la construcción.\\
+\hline
+\end{DoxyParams}
+Para cada iteración construye una solución mediante {\ttfamily \doxylink{classtop_1_1_t_o_p_t_w_g_r_a_s_p_ade97c51a7d20660d7d306b756b4a6302}{compute\+Greedy\+Solution}}, evalúa su fitness y mantiene estadísticas de media y mejor solución. \Hypertarget{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a01595711790fbdceebe112f930ff7f02}\index{top.TOPTWGRASP@{top.TOPTWGRASP}!setSolution@{setSolution}}
+\index{setSolution@{setSolution}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{\texorpdfstring{setSolution()}{setSolution()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a01595711790fbdceebe112f930ff7f02} 
+void top.\+TOPTWGRASP.\+set\+Solution (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtop_1_1_t_o_p_t_w_solution}{TOPTWSolution}}}]{solution}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece la solución sobre la que operará el GRASP. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em solution} & Nueva instancia de {\ttfamily \doxylink{classtop_1_1_t_o_p_t_w_solution}{TOPTWSolution}}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a88f5adcd791131b1d8da3dc848d80701}\index{top.TOPTWGRASP@{top.TOPTWGRASP}!setSolutionTime@{setSolutionTime}}
+\index{setSolutionTime@{setSolutionTime}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{\texorpdfstring{setSolutionTime()}{setSolutionTime()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a88f5adcd791131b1d8da3dc848d80701} 
+void top.\+TOPTWGRASP.\+set\+Solution\+Time (\begin{DoxyParamCaption}\item[{int}]{solution\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece el tiempo asociado a la solución. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em solution\+Time} & Tiempo a asignar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classtop_1_1_t_o_p_t_w_g_r_a_s_p_adaccdd26e4ad89ffb3e86c780dcd90d7}\index{top.TOPTWGRASP@{top.TOPTWGRASP}!updateSolution@{updateSolution}}
+\index{updateSolution@{updateSolution}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{\texorpdfstring{updateSolution()}{updateSolution()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_adaccdd26e4ad89ffb3e86c780dcd90d7} 
+void top.\+TOPTWGRASP.\+update\+Solution (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{candidate\+Selected}{, }\item[{Array\+List$<$ Array\+List$<$ Double $>$ $>$}]{departure\+Times}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inserta el candidato seleccionado en la solución y actualiza tiempos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidate\+Selected} & Arreglo con información del candidato \mbox{[}cliente, ruta, predecesor, coste, score\mbox{]}. \\
+\hline
+{\em departure\+Times} & Estructura de tiempos por ruta/cliente que será actualizada.\\
+\hline
+\end{DoxyParams}
+Actualiza predecesores/sucesores en la solución y recalcula los tiempos a partir del punto de inserción hasta el depósito. 
+
+\label{doc-variable-members}
+\Hypertarget{classtop_1_1_t_o_p_t_w_g_r_a_s_p_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a4319fa91e2578bb9b5570dc1af7b6f3b}\index{top.TOPTWGRASP@{top.TOPTWGRASP}!NO\_EVALUATED@{NO\_EVALUATED}}
+\index{NO\_EVALUATED@{NO\_EVALUATED}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{\texorpdfstring{NO\_EVALUATED}{NO\_EVALUATED}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a4319fa91e2578bb9b5570dc1af7b6f3b} 
+double top.\+TOPTWGRASP.\+NO\+\_\+\+EVALUATED = -\/1.\+0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Marca usada para indicar que una solución no ha sido evaluada. 
+
+Valor por defecto que puede usarse para inicializar evaluaciones pendientes. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Exposito\+TOP/\+Exposito\+TOP/src/top/\mbox{\hyperlink{_t_o_p_t_w_g_r_a_s_p_8java}{TOPTWGRASP.\+java}}\end{DoxyCompactItemize}

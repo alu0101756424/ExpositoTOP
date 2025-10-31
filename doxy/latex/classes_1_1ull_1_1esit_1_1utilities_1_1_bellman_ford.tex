@@ -1,0 +1,83 @@
+\doxysection{es.\+ull.\+esit.\+utilities.\+Bellman\+Ford Class Reference}
+\hypertarget{classes_1_1ull_1_1esit_1_1utilities_1_1_bellman_ford}{}\label{classes_1_1ull_1_1esit_1_1utilities_1_1_bellman_ford}\index{es.ull.esit.utilities.BellmanFord@{es.ull.esit.utilities.BellmanFord}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classes_1_1ull_1_1esit_1_1utilities_1_1_bellman_ford_a3d5fd98d4098ebe439fd5ad9f79602ea}{Bellman\+Ford}} (int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} distance\+Matrix, int nodes, Array\+List$<$ Integer $>$ path)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classes_1_1ull_1_1esit_1_1utilities_1_1_bellman_ford_afdc1a955ba8f201e6ed6860965e19bf2}{get\+Distances}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el arreglo de distancias mínimas calculadas. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classes_1_1ull_1_1esit_1_1utilities_1_1_bellman_ford_a4bad6103ccc407601545e7b8efa924ab}{get\+Value}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el valor asociado al resultado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classes_1_1ull_1_1esit_1_1utilities_1_1_bellman_ford_a250f4ed361209a7bed3bdc12010b3d3c}{solve}} ()
+\begin{DoxyCompactList}\small\item\em Ejecuta el algoritmo de Bellman-\/\+Ford para calcular distancias y camino. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classes_1_1ull_1_1esit_1_1utilities_1_1_bellman_ford_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classes_1_1ull_1_1esit_1_1utilities_1_1_bellman_ford_a3d5fd98d4098ebe439fd5ad9f79602ea}\index{es.ull.esit.utilities.BellmanFord@{es.ull.esit.utilities.BellmanFord}!BellmanFord@{BellmanFord}}
+\index{BellmanFord@{BellmanFord}!es.ull.esit.utilities.BellmanFord@{es.ull.esit.utilities.BellmanFord}}
+\doxysubsubsection{\texorpdfstring{BellmanFord()}{BellmanFord()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_bellman_ford_a3d5fd98d4098ebe439fd5ad9f79602ea} 
+es.\+ull.\+esit.\+utilities.\+Bellman\+Ford.\+Bellman\+Ford (\begin{DoxyParamCaption}\item[{int}]{distance\+Matrix}{\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}, }\item[{int}]{nodes}{, }\item[{Array\+List$<$ Integer $>$}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance\+Matrix} & Matriz de distancias entre nodos. \\
+\hline
+{\em nodes} & Número de nodos del grafo. \\
+\hline
+{\em path} & Lista donde se almacenará el camino reconstruido. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classes_1_1ull_1_1esit_1_1utilities_1_1_bellman_ford_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classes_1_1ull_1_1esit_1_1utilities_1_1_bellman_ford_afdc1a955ba8f201e6ed6860965e19bf2}\index{es.ull.esit.utilities.BellmanFord@{es.ull.esit.utilities.BellmanFord}!getDistances@{getDistances}}
+\index{getDistances@{getDistances}!es.ull.esit.utilities.BellmanFord@{es.ull.esit.utilities.BellmanFord}}
+\doxysubsubsection{\texorpdfstring{getDistances()}{getDistances()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_bellman_ford_afdc1a955ba8f201e6ed6860965e19bf2} 
+int\mbox{[}$\,$\mbox{]} es.\+ull.\+esit.\+utilities.\+Bellman\+Ford.\+get\+Distances (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el arreglo de distancias mínimas calculadas. 
+
+\begin{DoxyReturn}{Returns}
+Arreglo de enteros con la distancia mínima desde el nodo 0 a cada nodo. Puede ser null hasta que no se invoque {\ttfamily \doxylink{classes_1_1ull_1_1esit_1_1utilities_1_1_bellman_ford_a250f4ed361209a7bed3bdc12010b3d3c}{solve()}}. 
+\end{DoxyReturn}
+\Hypertarget{classes_1_1ull_1_1esit_1_1utilities_1_1_bellman_ford_a4bad6103ccc407601545e7b8efa924ab}\index{es.ull.esit.utilities.BellmanFord@{es.ull.esit.utilities.BellmanFord}!getValue@{getValue}}
+\index{getValue@{getValue}!es.ull.esit.utilities.BellmanFord@{es.ull.esit.utilities.BellmanFord}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_bellman_ford_a4bad6103ccc407601545e7b8efa924ab} 
+int es.\+ull.\+esit.\+utilities.\+Bellman\+Ford.\+get\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el valor asociado al resultado. 
+
+\begin{DoxyReturn}{Returns}
+Entero con el valor calculado; en esta implementación se asigna como el negativo de la distancia al nodo destino (nodes-\/1) tras resolver. 
+\end{DoxyReturn}
+\Hypertarget{classes_1_1ull_1_1esit_1_1utilities_1_1_bellman_ford_a250f4ed361209a7bed3bdc12010b3d3c}\index{es.ull.esit.utilities.BellmanFord@{es.ull.esit.utilities.BellmanFord}!solve@{solve}}
+\index{solve@{solve}!es.ull.esit.utilities.BellmanFord@{es.ull.esit.utilities.BellmanFord}}
+\doxysubsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_bellman_ford_a250f4ed361209a7bed3bdc12010b3d3c} 
+void es.\+ull.\+esit.\+utilities.\+Bellman\+Ford.\+solve (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ejecuta el algoritmo de Bellman-\/\+Ford para calcular distancias y camino. 
+
+Inicializa distancias y predecesores, relaja aristas (nodes-\/1) veces, reconstruye el camino desde el nodo destino (nodes-\/1) hacia el origen y ajusta el atributo value como negativo de la distancia final. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Exposito\+TOP/\+Exposito\+TOP/src/es/ull/esit/utilities/\mbox{\hyperlink{_bellman_ford_8java}{Bellman\+Ford.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+projectKey=lab3
+serverUrl=http://localhost:9000
+serverVersion=25.9.0.112764
+dashboardUrl=http://localhost:9000/dashboard?id=lab3
+ceTaskId=30eac878-3db8-4acc-b022-779bcaf61526
+ceTaskUrl=http://localhost:9000/api/ce/task?id=30eac878-3db8-4acc-b022-779bcaf61526

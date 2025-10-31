@@ -1,0 +1,11 @@
+<map id="ExpositoTOP/ExpositoTOP/src/es/ull/esit/utilities/PowerSet.java" name="ExpositoTOP/ExpositoTOP/src/es/ull/esit/utilities/PowerSet.java">
+<area shape="rect" id="Node000001" title="Iterador para generar el conjunto potencia (todos los subconjuntos) de un conjunto dado." alt="" coords="164,5,345,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,112,112,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,67,101,108,99,103,190,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="136,112,248,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,66,212,101,207,97,232,63"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="272,112,362,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="277,63,302,97,297,101,273,66"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="387,112,503,139"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="318,62,406,103,403,108,315,67"/>
+</map>

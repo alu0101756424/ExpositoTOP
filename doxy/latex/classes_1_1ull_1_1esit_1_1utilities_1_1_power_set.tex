@@ -1,0 +1,99 @@
+\doxysection{es.\+ull.\+esit.\+utilities.\+Power\+Set\texorpdfstring{$<$}{<} E \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set}{}\label{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set}\index{es.ull.esit.utilities.PowerSet$<$ E $>$@{es.ull.esit.utilities.PowerSet$<$ E $>$}}
+
+
+Inheritance diagram for es.\+ull.\+esit.\+utilities.\+Power\+Set\texorpdfstring{$<$}{<} E \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for es.\+ull.\+esit.\+utilities.\+Power\+Set\texorpdfstring{$<$}{<} E \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set_a6b7dcc9f679ec5fd47c9267e00b35750}{Power\+Set}} (Set$<$ E $>$ set)
+\item 
+boolean \mbox{\hyperlink{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set_ad366758e2b310bc9875b469b73940535}{has\+Next}} ()
+\item 
+Set$<$ E $>$ \mbox{\hyperlink{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set_abd2d06c8f0f04e077db91eedebf76e40}{next}} ()
+\item 
+void \mbox{\hyperlink{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set_a1e90f61053643b887dd9ff82f4a367c4}{remove}} ()
+\item 
+Iterator$<$ Set$<$ E $>$ $>$ \mbox{\hyperlink{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set_a3f26282fcfa1c64e6a3c8caf19f53d3b}{iterator}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set_a6b7dcc9f679ec5fd47c9267e00b35750}\index{es.ull.esit.utilities.PowerSet$<$ E $>$@{es.ull.esit.utilities.PowerSet$<$ E $>$}!PowerSet@{PowerSet}}
+\index{PowerSet@{PowerSet}!es.ull.esit.utilities.PowerSet$<$ E $>$@{es.ull.esit.utilities.PowerSet$<$ E $>$}}
+\doxysubsubsection{\texorpdfstring{PowerSet()}{PowerSet()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set_a6b7dcc9f679ec5fd47c9267e00b35750} 
+\mbox{\hyperlink{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set}{es.\+ull.\+esit.\+utilities.\+Power\+Set}}$<$ E $>$.Power\+Set (\begin{DoxyParamCaption}\item[{Set$<$ E $>$}]{set}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em set} & Conjunto de entrada cuyo conjunto potencia se desea generar. @impl\+Note Se convierte el conjunto a un arreglo; el orden resultante depende de la implementación de {\ttfamily set.\+to\+Array()}. El constructor crea un Bit\+Set de longitud {\ttfamily arr.\+length + 1} para marcar el fin. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set_ad366758e2b310bc9875b469b73940535}\index{es.ull.esit.utilities.PowerSet$<$ E $>$@{es.ull.esit.utilities.PowerSet$<$ E $>$}!hasNext@{hasNext}}
+\index{hasNext@{hasNext}!es.ull.esit.utilities.PowerSet$<$ E $>$@{es.ull.esit.utilities.PowerSet$<$ E $>$}}
+\doxysubsubsection{\texorpdfstring{hasNext()}{hasNext()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set_ad366758e2b310bc9875b469b73940535} 
+boolean \mbox{\hyperlink{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set}{es.\+ull.\+esit.\+utilities.\+Power\+Set}}$<$ E $>$.has\+Next (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Comprueba si queda algún subconjunto por generar. \begin{DoxyReturn}{Returns}
+{\ttfamily true} si aún hay subconjuntos pendientes, {\ttfamily false} cuando se ha llegado al final. 
+\end{DoxyReturn}
+\Hypertarget{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set_a3f26282fcfa1c64e6a3c8caf19f53d3b}\index{es.ull.esit.utilities.PowerSet$<$ E $>$@{es.ull.esit.utilities.PowerSet$<$ E $>$}!iterator@{iterator}}
+\index{iterator@{iterator}!es.ull.esit.utilities.PowerSet$<$ E $>$@{es.ull.esit.utilities.PowerSet$<$ E $>$}}
+\doxysubsubsection{\texorpdfstring{iterator()}{iterator()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set_a3f26282fcfa1c64e6a3c8caf19f53d3b} 
+Iterator$<$ Set$<$ E $>$ $>$ \mbox{\hyperlink{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set}{es.\+ull.\+esit.\+utilities.\+Power\+Set}}$<$ E $>$.iterator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Devuelve el iterador (esta misma instancia). \begin{DoxyReturn}{Returns}
+{\ttfamily this} como {\ttfamily \doxylink{}{Iterator}}. 
+\end{DoxyReturn}
+\Hypertarget{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set_abd2d06c8f0f04e077db91eedebf76e40}\index{es.ull.esit.utilities.PowerSet$<$ E $>$@{es.ull.esit.utilities.PowerSet$<$ E $>$}!next@{next}}
+\index{next@{next}!es.ull.esit.utilities.PowerSet$<$ E $>$@{es.ull.esit.utilities.PowerSet$<$ E $>$}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set_abd2d06c8f0f04e077db91eedebf76e40} 
+Set$<$ E $>$ \mbox{\hyperlink{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set}{es.\+ull.\+esit.\+utilities.\+Power\+Set}}$<$ E $>$.next (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Devuelve el siguiente subconjunto en la iteración. \begin{DoxyReturn}{Returns}
+Un {\ttfamily \doxylink{}{Set}} con los elementos seleccionados según el Bit\+Set actual.
+\end{DoxyReturn}
+Construye un {\ttfamily \doxylink{}{Tree\+Set}} con los elementos cuyo bit está activo, luego incrementa el Bit\+Set como contador (suma 1 en binario). @impl\+Note Si los elementos no son comparables, {\ttfamily \doxylink{}{Tree\+Set}} lanzará {\ttfamily \doxylink{}{Class\+Cast\+Exception}}; cambiar la implementación a {\ttfamily \doxylink{}{java.\+util.\+Linked\+Hash\+Set}} si se precisa mantener inserción sin requisito de comparabilidad. \Hypertarget{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set_a1e90f61053643b887dd9ff82f4a367c4}\index{es.ull.esit.utilities.PowerSet$<$ E $>$@{es.ull.esit.utilities.PowerSet$<$ E $>$}!remove@{remove}}
+\index{remove@{remove}!es.ull.esit.utilities.PowerSet$<$ E $>$@{es.ull.esit.utilities.PowerSet$<$ E $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set_a1e90f61053643b887dd9ff82f4a367c4} 
+void \mbox{\hyperlink{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set}{es.\+ull.\+esit.\+utilities.\+Power\+Set}}$<$ E $>$.remove (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Operación no soportada en este iterador. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Unsupported\+Operation\+Exception} & siempre que se invoque. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Exposito\+TOP/\+Exposito\+TOP/src/es/ull/esit/utilities/\mbox{\hyperlink{_power_set_8java}{Power\+Set.\+java}}\end{DoxyCompactItemize}

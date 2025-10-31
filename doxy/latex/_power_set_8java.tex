@@ -1,0 +1,37 @@
+\doxysection{Exposito\+TOP/\+Exposito\+TOP/src/es/ull/esit/utilities/\+Power\+Set.java File Reference}
+\hypertarget{_power_set_8java}{}\label{_power_set_8java}\index{ExpositoTOP/ExpositoTOP/src/es/ull/esit/utilities/PowerSet.java@{ExpositoTOP/ExpositoTOP/src/es/ull/esit/utilities/PowerSet.java}}
+
+
+Iterador para generar el conjunto potencia (todos los subconjuntos) de un conjunto dado.  
+
+
+{\ttfamily import java.\+util.\+Bit\+Set;}\newline
+{\ttfamily import java.\+util.\+Iterator;}\newline
+{\ttfamily import java.\+util.\+Set;}\newline
+{\ttfamily import java.\+util.\+Tree\+Set;}\newline
+Include dependency graph for Power\+Set.\+java\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_power_set_8java__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classes_1_1ull_1_1esit_1_1utilities_1_1_power_set}{es.\+ull.\+esit.\+utilities.\+Power\+Set$<$ E $>$}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Iterador para generar el conjunto potencia (todos los subconjuntos) de un conjunto dado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\+E$>$} & Tipo de los elementos del conjunto.\\
+\hline
+\end{DoxyParams}
+Esta clase implementa {\ttfamily \doxylink{}{Iterator}} y {\ttfamily \doxylink{}{Iterable}} para recorrer todos los subconjuntos de un conjunto de entrada. Internamente convierte el conjunto en un arreglo y utiliza un {\ttfamily \doxylink{}{Bit\+Set}} como contador binario\+: cada bit indica si el elemento correspondiente está presente en el subconjunto actual.
+
+Nota\+: la implementación usa {\ttfamily \doxylink{}{Tree\+Set}} para construir cada subconjunto, por lo que los elementos deberán ser comparables (o cambiar el tipo de Set si no se desea ordenación). 

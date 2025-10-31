@@ -1,0 +1,63 @@
+\doxysection{top.\+TOPTWEvaluator Class Reference}
+\hypertarget{classtop_1_1_t_o_p_t_w_evaluator}{}\label{classtop_1_1_t_o_p_t_w_evaluator}\index{top.TOPTWEvaluator@{top.TOPTWEvaluator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_evaluator_a6d0c45513c641c55b6e9c878ffd5f476}{evaluate}} (\mbox{\hyperlink{classtop_1_1_t_o_p_t_w_solution}{TOPTWSolution}} solution)
+\begin{DoxyCompactList}\small\item\em Evalúa la solución indicada y asigna su valor de función objetivo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_evaluator_aa87e11d07ed8529d44fb83c50ac71615}{NO\+\_\+\+EVALUATED}} = -\/1.\+0
+\begin{DoxyCompactList}\small\item\em Marca para indicar que una solución no ha sido evaluada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classtop_1_1_t_o_p_t_w_evaluator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtop_1_1_t_o_p_t_w_evaluator_a6d0c45513c641c55b6e9c878ffd5f476}\index{top.TOPTWEvaluator@{top.TOPTWEvaluator}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!top.TOPTWEvaluator@{top.TOPTWEvaluator}}
+\doxysubsubsection{\texorpdfstring{evaluate()}{evaluate()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_evaluator_a6d0c45513c641c55b6e9c878ffd5f476} 
+void top.\+TOPTWEvaluator.\+evaluate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtop_1_1_t_o_p_t_w_solution}{TOPTWSolution}}}]{solution}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Evalúa la solución indicada y asigna su valor de función objetivo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em solution} & Objeto {\ttfamily \doxylink{classtop_1_1_t_o_p_t_w_solution}{TOPTWSolution}} que contiene la representación de rutas y enlaces con el problema (matriz de distancias, índices de depósito, sucesores, etc.).\\
+\hline
+\end{DoxyParams}
+La evaluación debe\+:
+\begin{DoxyItemize}
+\item Iterar por cada depósito/vehículo presente en la solución.
+\item Recorrer la secuencia de nodos partiendo del depósito, acumulando distancias entre sucesores y desde/hacia el depósito.
+\item Acumular en la función objetivo los costes acumulados por cada etapa (si esa es la métrica deseada). \begin{DoxyNote}{Note}
+El cuerpo del método en el repositorio está comentado; restaurar y adaptar la lógica según la implementación concreta de {\ttfamily \doxylink{classtop_1_1_t_o_p_t_w_solution}{TOPTWSolution}} y del modelo de problema. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{classtop_1_1_t_o_p_t_w_solution}{TOPTWSolution} 
+\end{DoxySeeAlso}
+
+\end{DoxyItemize}
+
+\label{doc-variable-members}
+\Hypertarget{classtop_1_1_t_o_p_t_w_evaluator_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtop_1_1_t_o_p_t_w_evaluator_aa87e11d07ed8529d44fb83c50ac71615}\index{top.TOPTWEvaluator@{top.TOPTWEvaluator}!NO\_EVALUATED@{NO\_EVALUATED}}
+\index{NO\_EVALUATED@{NO\_EVALUATED}!top.TOPTWEvaluator@{top.TOPTWEvaluator}}
+\doxysubsubsection{\texorpdfstring{NO\_EVALUATED}{NO\_EVALUATED}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_evaluator_aa87e11d07ed8529d44fb83c50ac71615} 
+double top.\+TOPTWEvaluator.\+NO\+\_\+\+EVALUATED = -\/1.\+0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Marca para indicar que una solución no ha sido evaluada. 
+
+Valor numérico usado para inicializar o detectar soluciones no evaluadas antes de ejecutar el evaluador. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Exposito\+TOP/\+Exposito\+TOP/src/top/\mbox{\hyperlink{_t_o_p_t_w_evaluator_8java}{TOPTWEvaluator.\+java}}\end{DoxyCompactItemize}

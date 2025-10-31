@@ -1,0 +1,46 @@
+\doxysection{top.\+TOPTWReader Class Reference}
+\hypertarget{classtop_1_1_t_o_p_t_w_reader}{}\label{classtop_1_1_t_o_p_t_w_reader}\index{top.TOPTWReader@{top.TOPTWReader}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classtop_1_1_t_o_p_t_w}{TOPTW}} \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_reader_abad17029fc8928818483c5053dde0fa2}{read\+Problem}} (String file\+Path)
+\begin{DoxyCompactList}\small\item\em Lee una instancia \doxylink{classtop_1_1_t_o_p_t_w}{TOPTW} desde el fichero indicado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classtop_1_1_t_o_p_t_w_reader_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtop_1_1_t_o_p_t_w_reader_abad17029fc8928818483c5053dde0fa2}\index{top.TOPTWReader@{top.TOPTWReader}!readProblem@{readProblem}}
+\index{readProblem@{readProblem}!top.TOPTWReader@{top.TOPTWReader}}
+\doxysubsubsection{\texorpdfstring{readProblem()}{readProblem()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_reader_abad17029fc8928818483c5053dde0fa2} 
+\mbox{\hyperlink{classtop_1_1_t_o_p_t_w}{TOPTW}} top.\+TOPTWReader.\+read\+Problem (\begin{DoxyParamCaption}\item[{String}]{file\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Lee una instancia \doxylink{classtop_1_1_t_o_p_t_w}{TOPTW} desde el fichero indicado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & Ruta al fichero de instancia. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Instancia {\ttfamily \doxylink{classtop_1_1_t_o_p_t_w}{TOPTW}} construida con los datos del fichero.
+\end{DoxyReturn}
+El método\+:
+\begin{DoxyItemize}
+\item Lee la primera línea para obtener el número de vehículos y POIs.
+\item Crea un objeto {\ttfamily \doxylink{classtop_1_1_t_o_p_t_w}{TOPTW}} con esos valores.
+\item Salta la línea de cabecera siguiente y lee una línea por cada nodo (incluyendo el depósito en la primera iteración).
+\item Usa {\ttfamily \doxylink{classes_1_1ull_1_1esit_1_1utilities_1_1_exposito_utilities_a7ae7bdc68d2eac0de896cbe56878fd64}{Exposito\+Utilities\#simplify\+String(\+String)}} para normalizar espacios y separar campos.
+\item Mapea campos a coordenadas, tiempos de servicio, score y ventanas temporales (ready/due) según la posición del nodo en el fichero.
+\item Calcula la matriz de distancias llamando a {\ttfamily \doxylink{classtop_1_1_t_o_p_t_w_ad541e0a7d1aafc2b061e024c066dd662}{TOPTW\#calculate\+Distance\+Matrix()}}. \begin{DoxyNote}{Note}
+En caso de error de E/S se escribe el error por stderr y se finaliza la JVM. 
+\end{DoxyNote}
+
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Exposito\+TOP/\+Exposito\+TOP/src/top/\mbox{\hyperlink{_t_o_p_t_w_reader_8java}{TOPTWReader.\+java}}\end{DoxyCompactItemize}
