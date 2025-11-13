@@ -97,7 +97,7 @@ public class ExpositoUtilities {
         int n = a[0].length;
         int m = a.length;
         int p = b[0].length;
-        double ans[][] = new double[m][p];
+        double[][] ans = new double[m][p];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < p; j++) {
                 for (int k = 0; k < n; k++) {
